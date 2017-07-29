@@ -1,0 +1,66 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+html {
+    height: 100%;
+}
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0;
+    padding:0;
+    width:100%;
+    position: relative;
+}
+
+button {
+    width: calc(100% - 40px);
+    line-height: 48px;
+    margin: 20px 20px 0 20px;
+    background-color: #bad;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+button.disabled {
+    background-color: #dfcfff;
+    color: #808080;
+    border-color: #808080;
+}
+
+#eventLog {
+
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
