@@ -55,8 +55,8 @@ button.disabled {
 }
 
 #eventLog {
-
     position: absolute;
+    width: calc(100% - 40px);
     top: 230px;
     left: 20px;
     bottom: 20px;
